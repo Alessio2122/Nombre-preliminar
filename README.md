@@ -1,3 +1,4 @@
+
 # Nombre preliminar
 
 _**Shaw**. Garana!_
@@ -15,3 +16,7 @@ _Les haricots verts._
 **Oui.**
 
 $\text{Et des pommes de terre.}$
+
+Git guuud!!!!!!!!!!!!!!! *alejar enemigo*
+
+Garana!_ *acercar enemigo*
