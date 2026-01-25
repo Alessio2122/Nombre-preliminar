@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://c1gbfo3tys3"]
+[gd_scene load_steps=19 format=3 uid="uid://c1gbfo3tys3"]
 
 [ext_resource type="Texture2D" uid="uid://diesxku02gm3h" path="res://assets/suelo.png" id="1_yp54a"]
 [ext_resource type="Script" uid="uid://bhlcqti4yad0m" path="res://códigos/movimientoPersonaje.gd" id="2_bgvtk"]
@@ -43,12 +43,24 @@ font = SubResource("FontVariation_2yqpo")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_und83"]
 size = Vector2(459, 429)
 
+[sub_resource type="SystemFont" id="SystemFont_bgvtk"]
+
+[sub_resource type="TextMesh" id="TextMesh_2yqpo"]
+text = "Tengo que
+irme a cenar
+CBye"
+font = SubResource("SystemFont_bgvtk")
+structured_text_bidi_override = 3
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_und83"]
+
 [node name="Node2D" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
+position = Vector2(0, 3)
 scale = Vector2(126.80646, 126.80646)
 collision_layer = 2
-collision_mask = 2
+collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(4.7683716e-07, -4.7683716e-07)
@@ -59,9 +71,10 @@ texture = ExtResource("1_yp54a")
 shape = SubResource("RectangleShape2D_yp54a")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
-position = Vector2(4.7683716e-07, -4.7683716e-07)
+position = Vector2(-3, -3)
 scale = Vector2(47.108063, 47.108063)
-platform_floor_layers = 4294967293
+platform_on_leave = 2
+platform_floor_layers = 4294967040
 script = ExtResource("2_bgvtk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -121,7 +134,7 @@ mesh = SubResource("TextMesh_0mhbb")
 [node name="StaticBody2D7" type="StaticBody2D" parent="."]
 position = Vector2(0, -1)
 collision_layer = 4
-collision_mask = 4
+collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D7"]
 position = Vector2(-711, -554.00006)
@@ -131,3 +144,15 @@ texture = ExtResource("4_bgvtk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
 position = Vector2(-711.5, -539.5)
 shape = SubResource("RectangleShape2D_und83")
+
+[node name="StaticBody2D8" type="StaticBody2D" parent="."]
+position = Vector2(0, -1)
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D8"]
+position = Vector2(330.99997, 463)
+scale = Vector2(1644.8954, -755.76135)
+mesh = SubResource("TextMesh_2yqpo")
+texture = ExtResource("4_bgvtk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
+shape = SubResource("SegmentShape2D_und83")
