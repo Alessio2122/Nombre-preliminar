@@ -1,4 +1,8 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769356648
+::res://::1769361300
 icon.svg::CompressedTexture2D::1179295594016487808::1769356644::1769356650::1::::<><><>0<>0<>bfe311cca46754ecd7d9cc0c729b72f4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1769347489::0::1::::<><><>0<>0<><>::
+::res://assets/::1769361589
+suelo.png::CompressedTexture2D::7730164847631217391::1769359131::1769361745::1::::<><><>0<>0<>35c4932ab7fb660ec8bc5166a13d29d2<>res://.godot/imported/suelo.png-abacc712d9e9d599f98394705b5c9aca.bptc.ctex::
+::res://escenarios/::1769361287
+sala1.tscn::PackedScene::1089714391949205421::1769361287::0::1::::<><><>0<>0<><>::uid://diesxku02gm3h::::res://assets/suelo.png

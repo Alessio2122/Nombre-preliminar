@@ -1,6 +1,6 @@
+MeshInstance3D
 CollisionShape3D
 Sprite3D
-MeshInstance3D
 StaticBody3D
 Sprite2D
 StaticBody2D
