@@ -1,4 +1,3 @@
-
 # Nombre preliminar
 
 _**Shaw**. Garana!_
@@ -19,4 +18,8 @@ $\text{Et des pommes de terre.}$
 
 Git guuud!!!!!!!!!!!!!!! *alejar enemigo*
 
-Garana!_ *acercar enemigo*
+_Garana!_ *acercar enemigo*
+
+---
+
+<p style="font: Monospace">Pero ahora un poco de HTML, porque te recuerdo que se puede usar en <emph>Mark</emph>down</p>
