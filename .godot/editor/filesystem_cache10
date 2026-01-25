@@ -2,10 +2,11 @@
 ::res://::1769364261
 icon.svg::CompressedTexture2D::1179295594016487808::1769356644::1769356650::1::::<><><>0<>0<>bfe311cca46754ecd7d9cc0c729b72f4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
 README.md::TextFile::-1::1769347489::0::1::::<><><>0<>0<><>::
-::res://assets/::1769362499
+::res://assets/::1769366920
 golem.png::CompressedTexture2D::2073828045031617315::1769362161::1769362499::1::::<><><>0<>0<>02b932d726ddea5b0f69c0c763365de8<>res://.godot/imported/golem.png-4ecf06b627a0b206e6315fdbd8983774.s3tc.ctex::
+pasto.png::CompressedTexture2D::3179219091474196725::1769366920::1769366931::1::::<><><>0<>0<>226810d1ef12da8fecf82942d7daf6ba<>res://.godot/imported/pasto.png-eb3b0a5358e11cc9c916657a77ade838.ctex::
 suelo.png::CompressedTexture2D::7730164847631217391::1769359131::1769361745::1::::<><><>0<>0<>35c4932ab7fb660ec8bc5166a13d29d2<>res://.godot/imported/suelo.png-abacc712d9e9d599f98394705b5c9aca.bptc.ctex::
 ::res://códigos/::1769363949
 movimientoPersonaje.gd::GDScript::2900601762793788298::1769363949::0::1::::<>CharacterBody2D<><>0<>0<><>::
-::res://escenarios/::1769364014
-sala.tscn::PackedScene::5718173005137720::1769364014::0::1::::<><><>0<>0<><>::uid://diesxku02gm3h::::res://assets/suelo.png<>uid://bhlcqti4yad0m::::res://códigos/movimientoPersonaje.gd<>uid://4stv6ruub3fb::::res://assets/golem.png
+::res://escenarios/::1769366246
+sala.tscn::PackedScene::5718173005137720::1769366246::0::1::::<><><>0<>0<><>::uid://diesxku02gm3h::::res://assets/suelo.png<>uid://bhlcqti4yad0m::::res://códigos/movimientoPersonaje.gd<>uid://4stv6ruub3fb::::res://assets/golem.png

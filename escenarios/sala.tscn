@@ -1,8 +1,9 @@
-[gd_scene load_steps=14 format=3 uid="uid://c1gbfo3tys3"]
+[gd_scene load_steps=16 format=3 uid="uid://c1gbfo3tys3"]
 
 [ext_resource type="Texture2D" uid="uid://diesxku02gm3h" path="res://assets/suelo.png" id="1_yp54a"]
 [ext_resource type="Script" uid="uid://bhlcqti4yad0m" path="res://códigos/movimientoPersonaje.gd" id="2_bgvtk"]
 [ext_resource type="Texture2D" uid="uid://4stv6ruub3fb" path="res://assets/golem.png" id="3_2yqpo"]
+[ext_resource type="Texture2D" uid="uid://blkbjkxhbvp78" path="res://assets/pasto.png" id="4_bgvtk"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yp54a"]
 
@@ -39,11 +40,15 @@ text = "Las judías verdes
 nos ganarán"
 font = SubResource("FontVariation_2yqpo")
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_und83"]
+size = Vector2(459, 429)
+
 [node name="Node2D" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 scale = Vector2(126.80646, 126.80646)
 collision_layer = 2
+collision_mask = 2
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
 position = Vector2(4.7683716e-07, -4.7683716e-07)
@@ -56,6 +61,7 @@ shape = SubResource("RectangleShape2D_yp54a")
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 position = Vector2(4.7683716e-07, -4.7683716e-07)
 scale = Vector2(47.108063, 47.108063)
+platform_floor_layers = 4294967293
 script = ExtResource("2_bgvtk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
@@ -111,3 +117,17 @@ shape = SubResource("RectangleShape2D_2yqpo")
 [node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D6"]
 scale = Vector2(33.52006, 33.52006)
 mesh = SubResource("TextMesh_0mhbb")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="."]
+position = Vector2(0, -1)
+collision_layer = 4
+collision_mask = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D7"]
+position = Vector2(-711, -554.00006)
+scale = Vector2(28.760002, 28.760002)
+texture = ExtResource("4_bgvtk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
+position = Vector2(-711.5, -539.5)
+shape = SubResource("RectangleShape2D_und83")
