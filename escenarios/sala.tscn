@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://c1gbfo3tys3"]
+[gd_scene load_steps=14 format=3 uid="uid://c1gbfo3tys3"]
 
 [ext_resource type="Texture2D" uid="uid://diesxku02gm3h" path="res://assets/suelo.png" id="1_yp54a"]
 [ext_resource type="Script" uid="uid://bhlcqti4yad0m" path="res://códigos/movimientoPersonaje.gd" id="2_bgvtk"]
@@ -6,8 +6,9 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yp54a"]
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_yp54a"]
-radius = 1.5888695
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_yp54a"]
+radius = 0.22964655
+height = 1.7862246
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_bgvtk"]
 a = Vector2(1268, -1270)
@@ -20,6 +21,23 @@ b = Vector2(-1268, 1266)
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_2yqpo"]
 a = Vector2(1268, -1270)
 b = Vector2(1268, 1266)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgvtk"]
+size = Vector2(25.680576, 8.270605)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2yqpo"]
+size = Vector2(31.675093, 6.9987125)
+
+[sub_resource type="FontVariation" id="FontVariation_2yqpo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_und83"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_0mhbb"]
+material = SubResource("StandardMaterial3D_und83")
+text = "Las judías verdes
+nos ganarán"
+font = SubResource("FontVariation_2yqpo")
 
 [node name="Node2D" type="Node2D"]
 
@@ -41,8 +59,8 @@ scale = Vector2(47.108063, 47.108063)
 script = ExtResource("2_bgvtk")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D"]
-scale = Vector2(1.122266, -0.66818815)
-shape = SubResource("CircleShape2D_yp54a")
+scale = Vector2(7.76469, -1.2359532)
+shape = SubResource("CapsuleShape2D_yp54a")
 
 [node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D"]
 position = Vector2(-3.814697e-07, 3.2000003)
@@ -50,7 +68,7 @@ scale = Vector2(0.14799997, 0.14799997)
 texture = ExtResource("3_2yqpo")
 
 [node name="Camera2D" type="Camera2D" parent="CharacterBody2D"]
-scale = Vector2(-7.960001, 0.9999998)
+scale = Vector2(-24.017569, 0.9358938)
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
 
@@ -75,3 +93,21 @@ shape = SubResource("SegmentShape2D_yp54a")
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D5"]
 position = Vector2(0, 2)
 shape = SubResource("SegmentShape2D_2yqpo")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="."]
+position = Vector2(392.00003, -506.99994)
+scale = Vector2(17.521656, -29.29111)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2(-0.19975471, 3.345724)
+scale = Vector2(1.7045722, 0.7512739)
+shape = SubResource("RectangleShape2D_bgvtk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D6"]
+position = Vector2(-0.02853775, -4.6259747)
+scale = Vector2(0.99999917, 0.99999946)
+shape = SubResource("RectangleShape2D_2yqpo")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D6"]
+scale = Vector2(33.52006, 33.52006)
+mesh = SubResource("TextMesh_0mhbb")
