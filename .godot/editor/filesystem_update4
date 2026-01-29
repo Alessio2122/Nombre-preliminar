@@ -1,2 +1,5 @@
 res://escenarios/sala.tscn
 res://códigos/movimientoPatata.gd
+res://export_presets.cfg
+res://README.md
+res://códigos/sonido.gd
