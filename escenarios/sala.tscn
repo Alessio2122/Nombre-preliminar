@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://c1gbfo3tys3"]
+[gd_scene load_steps=18 format=3 uid="uid://c1gbfo3tys3"]
 
 [ext_resource type="Texture2D" uid="uid://diesxku02gm3h" path="res://assets/suelo.png" id="1_yp54a"]
 [ext_resource type="Script" uid="uid://bhlcqti4yad0m" path="res://códigos/movimientoPersonaje.gd" id="2_bgvtk"]
@@ -8,7 +8,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yp54a"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0mhbb"]
-size = Vector2(0.4999114, 1.5008998)
+size = Vector2(0.5, 1.495)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_bgvtk"]
 a = Vector2(1268, -1270)
@@ -23,7 +23,7 @@ a = Vector2(1268, -1270)
 b = Vector2(1268, 1266)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_bgvtk"]
-size = Vector2(25.680576, 8.270605)
+size = Vector2(26.182808, 8.270605)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2yqpo"]
 size = Vector2(31.675093, 6.9987125)
@@ -51,22 +51,20 @@ CBye"
 font = SubResource("SystemFont_bgvtk")
 structured_text_bidi_override = 3
 
-[sub_resource type="SegmentShape2D" id="SegmentShape2D_und83"]
-
 [node name="Sala" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
-position = Vector2(0, 3)
 scale = Vector2(126.80646, 126.80646)
 collision_layer = 2
 collision_mask = 0
 
 [node name="Sprite2D" type="Sprite2D" parent="StaticBody2D"]
-position = Vector2(4.7683716e-07, -4.7683716e-07)
+position = Vector2(0, -0.0236581)
 scale = Vector2(1.25, 1.25)
 texture = ExtResource("1_yp54a")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2(0, -0.0236581)
 shape = SubResource("RectangleShape2D_yp54a")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
@@ -116,8 +114,8 @@ position = Vector2(392.00003, -506.99994)
 scale = Vector2(17.521656, -29.29111)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
-position = Vector2(-0.19975471, 3.345724)
-scale = Vector2(1.7045722, 0.7512739)
+position = Vector2(0.22828865, 3.3457222)
+scale = Vector2(1.7045721, 0.7512739)
 shape = SubResource("RectangleShape2D_bgvtk")
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D6"]
@@ -143,14 +141,8 @@ texture = ExtResource("4_bgvtk")
 position = Vector2(-711.5, -539.5)
 shape = SubResource("RectangleShape2D_und83")
 
-[node name="StaticBody2D8" type="StaticBody2D" parent="."]
-position = Vector2(0, -1)
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D8"]
-position = Vector2(330.99997, 463)
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(330.99997, 462)
 scale = Vector2(1644.8954, -755.76135)
 mesh = SubResource("TextMesh_2yqpo")
 texture = ExtResource("4_bgvtk")
-
-[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D8"]
-shape = SubResource("SegmentShape2D_und83")
