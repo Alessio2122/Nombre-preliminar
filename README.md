@@ -1,5 +1,9 @@
 # Nombre preliminar
 
+Simplemente pruebas de concepto, programación y casi cualquier cosa.
+
+![Prueba](https://shields.io/badge/Godot-1a364b?logo=godot-engine&style=for-the-badge) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white)
+
 _**Shaw**. Garana!_
 
 ---
@@ -19,7 +23,3 @@ $\text{Et des pommes de terre.}$
 Git guuud!!!!!!!!!!!!!!! *alejar enemigo*
 
 _Garana!_ *acercar enemigo*
-
----
-
-<p style="font: Monospace">Pero ahora un poco de HTML, porque te recuerdo que se puede usar en <emph>Mark</emph>down</p>
