@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://ba7iqemy0youd"]
+
+[ext_resource type="Script" uid="uid://bhlcqti4yad0m" path="res://códigos/movimientoPatata.gd" id="1_pvx0k"]
+[ext_resource type="Texture2D" uid="uid://b7grab33cbl2w" path="res://assets/patata.png" id="2_x6fx6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ccoa5"]
+size = Vector2(0.499, 1.495)
+
+[node name="Patata" type="CharacterBody2D" unique_id=563535225]
+script = ExtResource("1_pvx0k")
+
+[node name="CollisionPatata" type="CollisionShape2D" parent="." unique_id=72243560]
+position = Vector2(1e-45, 0)
+scale = Vector2(7.855674, -1.5017676)
+shape = SubResource("RectangleShape2D_ccoa5")
+
+[node name="SpritePatata" type="Sprite2D" parent="." unique_id=600532882]
+scale = Vector2(-0.28057426, -0.28057426)
+texture = ExtResource("2_x6fx6")

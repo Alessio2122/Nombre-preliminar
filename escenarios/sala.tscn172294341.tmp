@@ -1,0 +1,132 @@
+[gd_scene format=3 uid="uid://c1gbfo3tys3"]
+
+[ext_resource type="Texture2D" uid="uid://diesxku02gm3h" path="res://assets/suelo.png" id="1_yp54a"]
+[ext_resource type="PackedScene" uid="uid://ba7iqemy0youd" path="res://personajes/patata.tscn" id="3_yp54a"]
+[ext_resource type="AudioStream" uid="uid://7rqoym08qjuc" path="res://assets/Colobot - Intro (Intro).wav" id="4_2yqpo"]
+[ext_resource type="Texture2D" uid="uid://blkbjkxhbvp78" path="res://assets/pasto.png" id="4_bgvtk"]
+[ext_resource type="Script" uid="uid://dbmn41vpfxe3j" path="res://códigos/sonido.gd" id="5_2yqpo"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yp54a"]
+
+[sub_resource type="SystemFont" id="SystemFont_bgvtk"]
+
+[sub_resource type="TextMesh" id="TextMesh_2yqpo"]
+text = "Tengo que
+irme a cenar
+CBye"
+font = SubResource("SystemFont_bgvtk")
+structured_text_bidi_override = 3
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_bgvtk"]
+a = Vector2(1268, -1270)
+b = Vector2(-1268, -1270)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_yp54a"]
+a = Vector2(-1268, -1270)
+b = Vector2(-1268, 1266)
+
+[sub_resource type="SegmentShape2D" id="SegmentShape2D_2yqpo"]
+a = Vector2(1268, -1270)
+b = Vector2(1268, 1266)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_bgvtk"]
+size = Vector2(26.182808, 8.270605)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_2yqpo"]
+size = Vector2(31.675093, 6.9987125)
+
+[sub_resource type="FontVariation" id="FontVariation_2yqpo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_und83"]
+albedo_color = Color(0, 0, 0, 1)
+
+[sub_resource type="TextMesh" id="TextMesh_0mhbb"]
+material = SubResource("StandardMaterial3D_und83")
+text = "Las judías verdes
+nos ganarán"
+font = SubResource("FontVariation_2yqpo")
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_und83"]
+size = Vector2(459, 429)
+
+[node name="Sala" type="Node2D" unique_id=1459541487]
+
+[node name="StaticBody2D" type="StaticBody2D" parent="." unique_id=556527598]
+scale = Vector2(126.80646, 126.80646)
+collision_layer = 2
+collision_mask = 0
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D" unique_id=475917675]
+position = Vector2(0, -0.0236581)
+scale = Vector2(1.25, 1.25)
+texture = ExtResource("1_yp54a")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D" unique_id=1725537142]
+shape = SubResource("RectangleShape2D_yp54a")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="." unique_id=1115483808]
+position = Vector2(330.99997, 462)
+scale = Vector2(1644.8954, -755.76135)
+mesh = SubResource("TextMesh_2yqpo")
+texture = ExtResource("4_bgvtk")
+
+[node name="Patata" parent="." unique_id=563535225 instance=ExtResource("3_yp54a")]
+scale = Vector2(-39.291504, -39.291504)
+
+[node name="Camera2D" type="Camera2D" parent="Patata" unique_id=1306699254]
+
+[node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1428020031]
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D2" unique_id=254488719]
+position = Vector2(0, 2537)
+shape = SubResource("SegmentShape2D_bgvtk")
+
+[node name="StaticBody2D3" type="StaticBody2D" parent="." unique_id=1242977268]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D3" unique_id=1264205986]
+shape = SubResource("SegmentShape2D_bgvtk")
+
+[node name="StaticBody2D4" type="StaticBody2D" parent="." unique_id=2044449401]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D4" unique_id=1792595290]
+shape = SubResource("SegmentShape2D_yp54a")
+
+[node name="StaticBody2D5" type="StaticBody2D" parent="." unique_id=1215771060]
+
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D5" unique_id=1701244734]
+shape = SubResource("SegmentShape2D_2yqpo")
+
+[node name="StaticBody2D6" type="StaticBody2D" parent="." unique_id=1365560553]
+position = Vector2(392.00003, -506.99994)
+scale = Vector2(17.521656, -29.29111)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6" unique_id=498071587]
+position = Vector2(0.22828865, 3.3457222)
+scale = Vector2(1.7045721, 0.7512739)
+shape = SubResource("RectangleShape2D_bgvtk")
+
+[node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D6" unique_id=396645196]
+position = Vector2(-0.02853775, -4.6259747)
+scale = Vector2(0.99999917, 0.99999946)
+shape = SubResource("RectangleShape2D_2yqpo")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="StaticBody2D6" unique_id=1029001085]
+scale = Vector2(33.52006, 33.52006)
+mesh = SubResource("TextMesh_0mhbb")
+
+[node name="StaticBody2D7" type="StaticBody2D" parent="." unique_id=1159117447]
+collision_layer = 4
+collision_mask = 2
+
+[node name="Sprite2D" type="Sprite2D" parent="StaticBody2D7" unique_id=1854683229]
+position = Vector2(-711, -554.00006)
+scale = Vector2(28.760002, 28.760002)
+texture = ExtResource("4_bgvtk")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7" unique_id=1957907901]
+position = Vector2(-711.5, -539.5)
+shape = SubResource("RectangleShape2D_und83")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=586218281]
+stream = ExtResource("4_2yqpo")
+script = ExtResource("5_2yqpo")
