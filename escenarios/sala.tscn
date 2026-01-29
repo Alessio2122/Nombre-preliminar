@@ -7,6 +7,15 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yp54a"]
 
+[sub_resource type="SystemFont" id="SystemFont_bgvtk"]
+
+[sub_resource type="TextMesh" id="TextMesh_2yqpo"]
+text = "Tengo que
+irme a cenar
+CBye"
+font = SubResource("SystemFont_bgvtk")
+structured_text_bidi_override = 3
+
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_0mhbb"]
 size = Vector2(0.5, 1.495)
 
@@ -42,15 +51,6 @@ font = SubResource("FontVariation_2yqpo")
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_und83"]
 size = Vector2(459, 429)
 
-[sub_resource type="SystemFont" id="SystemFont_bgvtk"]
-
-[sub_resource type="TextMesh" id="TextMesh_2yqpo"]
-text = "Tengo que
-irme a cenar
-CBye"
-font = SubResource("SystemFont_bgvtk")
-structured_text_bidi_override = 3
-
 [node name="Sala" type="Node2D"]
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -66,6 +66,12 @@ texture = ExtResource("1_yp54a")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2(0, -0.0236581)
 shape = SubResource("RectangleShape2D_yp54a")
+
+[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
+position = Vector2(330.99997, 462)
+scale = Vector2(1644.8954, -755.76135)
+mesh = SubResource("TextMesh_2yqpo")
+texture = ExtResource("4_bgvtk")
 
 [node name="CharacterBody2D" type="CharacterBody2D" parent="."]
 scale = Vector2(47.10806, 47.10806)
@@ -140,9 +146,3 @@ texture = ExtResource("4_bgvtk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7"]
 position = Vector2(-711.5, -539.5)
 shape = SubResource("RectangleShape2D_und83")
-
-[node name="MeshInstance2D" type="MeshInstance2D" parent="."]
-position = Vector2(330.99997, 462)
-scale = Vector2(1644.8954, -755.76135)
-mesh = SubResource("TextMesh_2yqpo")
-texture = ExtResource("4_bgvtk")
