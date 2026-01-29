@@ -1,2 +1,4 @@
 res://interfaces/interfaz.tscn
 res://códigos/sonido_botón.gd
+res://escenarios/sala.tscn
+res://códigos/movimientoPatata.gd
