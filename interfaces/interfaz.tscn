@@ -7,3 +7,19 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=543780427]
+layout_mode = 0
+offset_right = 192.0
+offset_bottom = 23.0
+text = "Cookie, candy, chocolate"
+fit_content = true
+
+[node name="Button" type="Button" parent="." unique_id=1379485158]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 27.0
+offset_right = 167.0
+offset_bottom = 58.0
+scale = Vector2(0.6409254, 0.6400012)
+text = "Comer alubias"
