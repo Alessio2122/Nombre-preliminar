@@ -1,9 +1,10 @@
 [gd_scene format=3 uid="uid://c1gbfo3tys3"]
 
 [ext_resource type="Texture2D" uid="uid://diesxku02gm3h" path="res://assets/suelo.png" id="1_yp54a"]
-[ext_resource type="Script" uid="uid://bhlcqti4yad0m" path="res://códigos/movimientoPersonaje.gd" id="2_bgvtk"]
-[ext_resource type="Texture2D" uid="uid://b7grab33cbl2w" path="res://assets/patata.png" id="3_bgvtk"]
+[ext_resource type="PackedScene" uid="uid://ba7iqemy0youd" path="res://personajes/patata.tscn" id="3_yp54a"]
+[ext_resource type="AudioStream" uid="uid://7rqoym08qjuc" path="res://assets/Colobot - Intro (Intro).wav" id="4_2yqpo"]
 [ext_resource type="Texture2D" uid="uid://blkbjkxhbvp78" path="res://assets/pasto.png" id="4_bgvtk"]
+[ext_resource type="Script" uid="uid://dbmn41vpfxe3j" path="res://códigos/sonido.gd" id="5_2yqpo"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yp54a"]
 
@@ -15,9 +16,6 @@ irme a cenar
 CBye"
 font = SubResource("SystemFont_bgvtk")
 structured_text_bidi_override = 3
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_0mhbb"]
-size = Vector2(0.5, 1.495)
 
 [sub_resource type="SegmentShape2D" id="SegmentShape2D_bgvtk"]
 a = Vector2(1268, -1270)
@@ -72,23 +70,10 @@ scale = Vector2(1644.8954, -755.76135)
 mesh = SubResource("TextMesh_2yqpo")
 texture = ExtResource("4_bgvtk")
 
-[node name="CharacterBody2D" type="CharacterBody2D" parent="." unique_id=300667868]
-scale = Vector2(47.10806, 47.10806)
-platform_on_leave = 2
-platform_floor_layers = 4294967040
-script = ExtResource("2_bgvtk")
+[node name="Patata" parent="." unique_id=563535225 instance=ExtResource("3_yp54a")]
+scale = Vector2(-39.291504, -39.291504)
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="CharacterBody2D" unique_id=592100191]
-position = Vector2(-3.5527137e-15, 0)
-scale = Vector2(7.855674, -1.5017676)
-shape = SubResource("RectangleShape2D_0mhbb")
-
-[node name="Sprite2D" type="Sprite2D" parent="CharacterBody2D" unique_id=1206882253]
-scale = Vector2(-0.28057426, -0.28057426)
-texture = ExtResource("3_bgvtk")
-
-[node name="Camera2D" type="Camera2D" parent="CharacterBody2D" unique_id=1457529072]
-scale = Vector2(-24.017569, 0.9358938)
+[node name="Camera2D" type="Camera2D" parent="Patata" unique_id=1306699254]
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="." unique_id=1428020031]
 
@@ -141,3 +126,7 @@ texture = ExtResource("4_bgvtk")
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D7" unique_id=1957907901]
 position = Vector2(-711.5, -539.5)
 shape = SubResource("RectangleShape2D_und83")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="." unique_id=586218281]
+stream = ExtResource("4_2yqpo")
+script = ExtResource("5_2yqpo")
