@@ -1,5 +1,8 @@
 [gd_scene format=3 uid="uid://dgnb3mxxslvam"]
 
+[ext_resource type="Script" uid="uid://ceql2c4jape8h" path="res://códigos/sonido_botón.gd" id="1_jsld1"]
+[ext_resource type="AudioStream" uid="uid://7rqoym08qjuc" path="res://assets/Colobot - Intro (Intro).wav" id="2_dt0xr"]
+
 [node name="Interfaz" type="Control" unique_id=1329650500]
 layout_mode = 3
 anchors_preset = 15
@@ -8,18 +11,27 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 
-[node name="RichTextLabel" type="RichTextLabel" parent="." unique_id=543780427]
-layout_mode = 0
-offset_right = 192.0
-offset_bottom = 23.0
-text = "Cookie, candy, chocolate"
-fit_content = true
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="." unique_id=961201352]
+stream = ExtResource("2_dt0xr")
+script = ExtResource("1_jsld1")
 
-[node name="Button" type="Button" parent="." unique_id=1379485158]
+[node name="GridContainer" type="GridContainer" parent="." unique_id=1245367841]
 layout_mode = 0
 offset_left = 48.0
 offset_top = 27.0
 offset_right = 167.0
-offset_bottom = 58.0
-scale = Vector2(0.6409254, 0.6400012)
+offset_bottom = 108.0
+scale = Vector2(2.3343048, 2.3343048)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="GridContainer" unique_id=543780427]
+layout_mode = 2
+text = "Cookie, candy, chocolate"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="GridContainer" unique_id=1379485158]
+layout_mode = 2
+theme_override_colors/icon_hover_color = Color(7.243678e-06, 0.56359553, 0.09259205, 1)
+theme_override_colors/icon_hover_pressed_color = Color(0.32272613, 0.9722362, 0.32272613, 1)
 text = "Comer alubias"

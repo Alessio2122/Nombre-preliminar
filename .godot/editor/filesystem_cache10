@@ -1,9 +1,9 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1769710176
+::res://::1769710927
 export_presets.cfg::TextFile::-1::1769710176::0::1::::<><><>0<>0<><>::
 icon.svg::CompressedTexture2D::1179295594016487808::1769356644::1769356650::1::::<><><>0<>0<>bfe311cca46754ecd7d9cc0c729b72f4<>res://.godot/imported/icon.svg-218a8f2b3041327d8a5756f3a245f83b.ctex::
-README.md::TextFile::-1::1769710198::0::1::::<><><>0<>0<><>::
-::res://assets/::1769710175
+README.md::TextFile::-1::1769710362::0::1::::<><><>0<>0<><>::
+::res://assets/::1769710284
 Colobot - Intro (Intro).wav::AudioStreamWAV::2282135171513665534::1769710175::1769710284::1::::<><><>0<>0<>d2e48079089509ffe1f9ba542591f74d<>res://.godot/imported/Colobot - Intro (Intro).wav-9310a5fc57240b37bf069a626428e29c.sample::
 pasto.png::CompressedTexture2D::3179219091474196725::1769710175::1769710284::1::::<><><>0<>0<>226810d1ef12da8fecf82942d7daf6ba<>res://.godot/imported/pasto.png-eb3b0a5358e11cc9c916657a77ade838.ctex::
 patata.png::CompressedTexture2D::4645882232564317184::1769710175::1769710284::1::::<><><>0<>0<>ab6e586b4519f3dd831d65b2ff0f8d8f<>res://.godot/imported/patata.png-87adacf848de8cc1568d7a76a6aa493b.ctex::
@@ -13,5 +13,7 @@ movimientoPatata.gd::GDScript::2900601762793788298::1769710176::0::1::::<>Charac
 sonido.gd::GDScript::7255065935432377977::1769710176::0::1::::<>AudioStreamPlayer2D<><>0<>0<><>::
 ::res://escenarios/::1769710176
 sala.tscn::PackedScene::5718173005137720::1769710176::0::1::::<><><>0<>0<><>::uid://diesxku02gm3h::::res://assets/suelo.png<>uid://ba7iqemy0youd::::res://personajes/patata.tscn<>uid://7rqoym08qjuc::::res://assets/Colobot - Intro (Intro).wav<>uid://blkbjkxhbvp78::::res://assets/pasto.png<>uid://dbmn41vpfxe3j::::res://códigos/sonido.gd
+::res://interfaces/::1769710748
+interfaz.tscn::PackedScene::7607343409812606840::1769710748::0::1::::<><><>0<>0<><>::
 ::res://personajes/::1769710176
 patata.tscn::PackedScene::2452995310223496243::1769710176::0::1::::<><><>0<>0<><>::uid://bhlcqti4yad0m::::res://códigos/movimientoPatata.gd<>uid://b7grab33cbl2w::::res://assets/patata.png
