@@ -1,4 +1,4 @@
 res://escenarios/sala.tscn
-res://personajes/patata.tscn
 res://códigos/movimientoPatata.gd
-res://códigos/sonido.gd
+res://personajes/patata.tscn
+res://README.md
