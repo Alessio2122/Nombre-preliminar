@@ -11,13 +11,13 @@ func _physics_process(_delta):
 	
 	# Movimiento horizontal
 	if dir_x != 0:
-		velocity.x = dir_x * speed
+		velocity.x = dir_x * 2 * speed
 	else:
 		velocity.x = move_toward(velocity.x, 0, speed)
 	
 	# Movimiento vertical
 	if dir_y != 0:
-		velocity.y = dir_y * speed
+		velocity.y = dir_y * 2 * speed
 	else:
 		velocity.y = move_toward(velocity.y, 0, speed)
 	
